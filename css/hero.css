@@ -1,0 +1,8 @@
+/* hero */
+.badge-red{background:var(--red2);border-radius:calc(45 * var(--u))}
+.hero-bar{background:var(--red2);border-radius:calc(100 * var(--u))}
+.badge-orange{background:#FD9308;border-radius:calc(43 * var(--u))}
+.hero-copy{color:#fff;font-weight:700;letter-spacing:calc(1.6 * var(--u));-webkit-text-stroke:calc(1.3 * var(--u)) #fff}
+
+.since{color:#fff;opacity:.43;font-weight:700}
+.halo{font-weight:700}
