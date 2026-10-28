@@ -1,0 +1,37 @@
+.about-p{font-weight:400}
+
+/* tombol */
+.btn{display:grid;place-items:center;background:var(--orange);color:#fff;border-radius:999px;font-weight:700;font-size:calc(var(--fs) * var(--u));text-decoration:none;line-height:1.4;transition:transform .15s,background .2s,box-shadow .2s}
+.btn:hover{background:#ffa81f;transform:translateY(calc(-3 * var(--u)));box-shadow:0 calc(8 * var(--u)) calc(16 * var(--u)) rgba(237,28,36,.35)}
+.btn:active{transform:none}
+
+/* carousel */
+.carousel{--k:.48;overflow:hidden;touch-action:pan-y;cursor:grab;outline:none;user-select:none;-webkit-user-select:none}
+.carousel.grabbing{cursor:grabbing}
+.track{position:absolute;inset:0;transform:translateX(calc(var(--tx,0) * var(--u)));transition:transform .65s cubic-bezier(.22,.8,.24,1);will-change:transform}
+.track.nt{transition:none}
+/* slide */
+.slide{--u:calc(100cqw / 1440 * var(--k));position:absolute;top:0;display:block;color:inherit;text-decoration:none;left:calc(var(--x) * 100cqw / 1440);width:calc(551 * var(--u));height:100%;-webkit-tap-highlight-color:transparent}
+.slide img{pointer-events:none;max-width:none}
+.carousel.js .slide{opacity:0;pointer-events:none;transition:opacity .65s ease}
+.carousel.js .slide.vis{opacity:1;pointer-events:auto}
+.carousel.js .track.nt .slide{transition:none}
+.carousel.js.grabbing .slide{opacity:1;transition:opacity .2s}
+.slide .card{transition:transform .25s ease}
+.slide:hover .card{transform:translateY(calc(-8 * var(--u)))}
+.slide:focus-visible{outline:3px solid var(--red);outline-offset:calc(6 * var(--u));box-shadow:none;border-radius:calc(120 * var(--u))}
+.card{background:var(--red2);border-radius:calc(118 * var(--u))}
+.shadow{filter:brightness(0) blur(calc(14.5 * var(--u)))}
+.shadow-lg{filter:brightness(0) blur(calc(20.5 * var(--u)))}
+.car-btn{position:absolute;top:calc(108 * var(--u));width:calc(60 * var(--u));height:calc(60 * var(--u));border-radius:50%;border:0;padding:0;background:rgba(255,153,0,.95);color:#fff;cursor:pointer;display:grid;place-items:center;box-shadow:0 calc(3 * var(--u)) calc(10 * var(--u)) rgba(0,0,0,.35);transition:transform .15s,background .2s;z-index:3}
+.car-btn svg{width:46%;height:46%;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.car-btn:hover{background:var(--red2);transform:scale(1.08)}
+.car-btn.prev{left:calc(8 * var(--u))}.car-btn.next{right:calc(8 * var(--u))}
+.card-title{font-weight:500}
+
+/* perbaikan carousel */
+.shapes{pointer-events:none}
+#carousel{z-index:1;cursor:grab;touch-action:pan-y}
+#carousel.grabbing{cursor:grabbing}
+#carousel .product-detail{z-index:2;pointer-events:auto;touch-action:manipulation}
+#carousel.js .slide:not(.vis) .product-detail{pointer-events:none}
