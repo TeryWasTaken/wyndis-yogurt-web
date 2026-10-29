@@ -1,2 +1,1 @@
-Base for the web.
-Baru ada home, menu and drawer, sama cover.
+Base for the web. Baru ada home, menu and drawer, cover, product detail section, dan submenu drawer.
