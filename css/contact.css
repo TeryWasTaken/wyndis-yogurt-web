@@ -1,0 +1,4 @@
+.ico{display:block;transition:transform .2s}.ico img{width:100%;height:100%;object-fit:fill}
+.ico:hover{transform:translateY(calc(-6 * var(--u))) scale(1.06)}
+.ico:focus-visible{outline-color:var(--red);box-shadow:none;border-radius:calc(30 * var(--u))}
+.thanks{font-weight:700}
