@@ -13,7 +13,7 @@ img{display:block}
 
 /* skala artboard */
 .stage,.hdr{--u:calc(100cqw / 1440);container-type:inline-size}
-.stage{position:relative;width:min(100%,1440px);margin:0 auto;aspect-ratio:1440/var(--stage-h);overflow:visible}
+.stage{position:relative;width:min(100%,1440px);margin:0 auto;aspect-ratio:1440/var(--stage-h);overflow:hidden}
 .a{position:absolute;left:calc(var(--x,0) * var(--u));top:calc(var(--y,0) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u))}
 .sec{display:contents}
 .anchor{display:block;width:0;height:0}

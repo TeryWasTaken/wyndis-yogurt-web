@@ -1,0 +1,4 @@
+/* detail produk */
+.detail .shadow{filter:brightness(0) blur(calc(14.5 * var(--u)))}
+.h3{font-weight:400}
+.lbl{font-weight:500}.lst{color:var(--brown);font-weight:400}.desc{font-weight:300}
