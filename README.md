@@ -1,1 +1,1 @@
-Base for the web. Baru ada home, menu and drawer, cover, product detail section, dan submenu drawer.
+Base for the web. Ada home, menu and drawer, cover, about us, product detail section, sub menu drawer, dan contact us.
